@@ -1,0 +1,28 @@
+ <body>
+ <h1 class="page-header">Temperature Monitor</h1>
+<div class="container">
+    <form>
+      <label for="temperature">Add Temperature:</label>
+      <input type="number" name="temperature" id="temperature" [(ngModel)]="temp">
+      <button class="btn btn-primary" (click)="recordTemperature()">Add</button> 
+       <p><strong>List:</strong>{{temperatureList}}</p>
+        <p class="alert alert-warning" *ngIf="limit">Only 8 numbers are permitted<p>
+    </form>
+    <div id="progressBar">
+      <div [style.width.%]="width"></div>
+    </div>
+    <hr />
+    <section>
+      <button class="btn btn-primary" (click)="calculateMedian()">Get Median Temperature</button>
+      Current Median: {{median}}
+      <!-- display current media here-->
+    </section>
+    <p *ngIf="min" class="alert alert-warning"> Please enter at least 2 numbers </p>
+    <hr>
+    <hr>
+    <p>Developer name: <b>Mounica Reddy</b></p>
+
+    <hr>
+    <a href="jasmine-test-runner.html">Run Unit Tests</a>
+    </div>
+  </body>

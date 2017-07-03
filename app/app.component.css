@@ -1,0 +1,9 @@
+#progressBar{
+  border-radius: 5px;
+  border: solid black 1px;
+}
+#progressBar > div{
+  background-color: #27B393;
+  height: 20px;
+  border-radius: 5px;
+}
