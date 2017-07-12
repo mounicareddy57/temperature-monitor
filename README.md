@@ -22,7 +22,6 @@ As an anonymous end user, I want a progress bar to see how full my collection of
 ```[5, 1, -7, 7, 8, 3, 9] --> [-7, 1, 3, 5, 7, 8, 9] = 5```
 
 ##Resources
-
 [Jasmine]: http://jasmine.github.io/2.4/introduction.html
 [Median]: http://en.wikipedia.org/wiki/Median
 [uncle bob]: https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
