@@ -6,6 +6,8 @@
       <input type="number" name="temperature" id="temperature" [(ngModel)]="temp">
       <button class="btn btn-primary" (click)="recordTemperature()">Add</button> 
        <p><strong>List:</strong>{{temperatureList}}</p>
+       <p class="alert alert-warning" *ngIf="blank">Please enter a number<p>
+         <p class="alert alert-warning" *ngIf="dec">Decimal numbers not accepted<p>
         <p class="alert alert-warning" *ngIf="limit">Only 8 numbers are permitted<p>
     </form>
     <div id="progressBar">
@@ -17,6 +19,7 @@
       Current Median: {{median}}
       <!-- display current media here-->
     </section>
+    <br>
     <p *ngIf="min" class="alert alert-warning"> Please enter at least 2 numbers </p>
     <hr>
     <hr>
